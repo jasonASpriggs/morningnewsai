@@ -1,0 +1,9 @@
+retrieve articles
+    -> normalize
+    -> deduplicate
+    -> classify topic
+    -> estimate sentiment
+    -> rank
+    -> select a balanced set
+    -> summarize
+    -> save briefing

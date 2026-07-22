@@ -1,0 +1,26 @@
+Mobile browser / installable PWA
+        |
+        v
+Firebase Hosting
+React or simple HTML/CSS/JavaScript
+        |
+        v
+Cloud Run API
+FastAPI + optional GCP ADK agent
+        |
+        +--> Firestore
+        |    Preferences, sources, topics, briefings
+        |
+        +--> News retrieval
+        |    RSS feeds, source APIs, or Google Search
+        |
+        +--> Gemini / Vertex AI
+             Classification, summarization, sentiment, ranking
+
+Cloud Scheduler
+        |
+        v
+Authenticated Cloud Run endpoint
+        |
+        v
+Generate and save morning briefings

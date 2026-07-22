@@ -1,0 +1,94 @@
+morning-news-ai/
+├── README.md
+├── .gitignore
+├── .env.example
+├── firebase.json
+├── firestore.rules
+├── firestore.indexes.json
+├── pyproject.toml
+├── Dockerfile
+├── Makefile
+│
+├── frontend/
+│   ├── package.json
+│   ├── vite.config.ts
+│   ├── public/
+│   │   ├── manifest.json
+│   │   └── icons/
+│   └── src/
+│       ├── main.tsx
+│       ├── App.tsx
+│       ├── components/
+│       │   ├── BriefingCard.tsx
+│       │   ├── TopicSelector.tsx
+│       │   ├── SourceSelector.tsx
+│       │   ├── BalanceControl.tsx
+│       │   └── MorningStatus.tsx
+│       ├── pages/
+│       │   ├── Today.tsx
+│       │   ├── Preferences.tsx
+│       │   └── History.tsx
+│       ├── services/
+│       │   ├── api.ts
+│       │   └── firebase.ts
+│       └── types/
+│           └── news.ts
+│
+├── backend/
+│   ├── main.py
+│   ├── config.py
+│   ├── api/
+│   │   ├── briefing.py
+│   │   ├── preferences.py
+│   │   ├── scheduler.py
+│   │   └── health.py
+│   ├── agents/
+│   │   ├── briefing_agent.py
+│   │   └── prompts.py
+│   ├── tools/
+│   │   ├── rss_search.py
+│   │   ├── web_search.py
+│   │   ├── article_fetcher.py
+│   │   └── source_registry.py
+│   ├── pipeline/
+│   │   ├── retrieve.py
+│   │   ├── normalize.py
+│   │   ├── deduplicate.py
+│   │   ├── classify.py
+│   │   ├── balance.py
+│   │   ├── rank.py
+│   │   └── summarize.py
+│   ├── repositories/
+│   │   ├── firestore.py
+│   │   └── briefing_repository.py
+│   ├── models/
+│   │   ├── article.py
+│   │   ├── briefing.py
+│   │   └── preferences.py
+│   └── tests/
+│       ├── test_balance.py
+│       ├── test_deduplication.py
+│       └── test_scheduler.py
+│
+├── config/
+│   ├── sources.yaml
+│   ├── default_topics.yaml
+│   └── prompt_versions.yaml
+│
+├── scripts/
+│   ├── seed_firestore.py
+│   ├── run_local.py
+│   └── create_scheduler_job.sh
+│
+├── infrastructure/
+│   ├── terraform/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   └── cloudbuild.yaml
+│
+└── .github/
+    └── workflows/
+        ├── test.yml
+        ├── deploy-frontend.yml
+        └── deploy-backend.yml
