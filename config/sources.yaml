@@ -19,6 +19,9 @@ sources:
     name: NPR
     domains: 
       - npr.org
-    retrieval_method: search
+    retrieval_method: rss
+    #this is the url where NPR pulishes its news feed
+    feed_urls:
+      - https://feeds.npr.org/1001/rss.xml
     enabled: true
     maximum_articles_per_briefing: 3  

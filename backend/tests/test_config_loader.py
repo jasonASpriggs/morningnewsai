@@ -12,7 +12,8 @@ def test_load_three_sources() -> None:
 
     assert len(sources) == 3
     assert all(source.enabled for source in sources)
-    assert all(source.retrieval_method == RetrievalMethod.SEARCH for source in sources)
+    assert all(source.retrieval_method == RetrievalMethod.SEARCH 
+               or source.retrieval_method == RetrievalMethod.RSS for source in sources)
 
 
 def test_source_ids_are_unique() -> None:
