@@ -46,6 +46,7 @@ class RSSRetriever:
 
         articles: list[Article] = []
 
+        #Creates Article objects from all the feed_urls in source
         for feed_url in source.feed_urls:
             response = self.client.get(str(feed_url))
             response.raise_for_status()
