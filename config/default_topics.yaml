@@ -1,0 +1,37 @@
+topics:
+  - id: climate-change
+    name: Climate Change
+    query: '"climate change" OR "global warming" OR "climate policy" OR "clean energy"'
+    description: Climate science, policy, mitigation, adaptation, and clean energy.
+    # include_domain is kept empty so the topic can be search across all sources. 
+    # if you want to limit the search to specific sources, you can add their domains here.
+    include_domains: []
+    exclude_terms:
+      - celebrity
+    weight: 1.0
+    minimum_articles: 1
+    maximum_articles: 4
+    enabled: true
+
+  - id: artificial-intelligence
+    name: Artificial Intelligence
+    query: '"artificial intelligence" OR "generative AI" OR "machine learning"'
+    description: AI research, products, regulation, employment, and social effects.
+    include_domains: []
+    exclude_terms: []
+    weight: 1.0
+    minimum_articles: 1
+    maximum_articles: 4
+    enabled: true
+
+  - id: science-health
+    name: Science and Health
+    query: 'science OR medicine OR public health OR space'
+    description: Scientific discoveries, medicine, public health, and space exploration.
+    include_domains: []
+    exclude_terms:
+      - celebrity
+    weight: 1.0
+    minimum_articles: 1
+    maximum_articles: 4
+    enabled: true

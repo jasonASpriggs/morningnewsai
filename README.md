@@ -29,7 +29,7 @@ python -m pip install -e ".[dev]"
 
 ## Operations and Commandflows
 
-- To run tests:
+- To run tests (make sure this is passing 100% before commiting):
 pytest
 
 - To check formatting and linting (make sure at least the first command passes 100% before pushing):
@@ -47,6 +47,8 @@ git add .
 git commit -m "example commit message"
 git push
 
+- To reinstall the project if dependencies change
+python -m pip install -e ".[dev]"
 
 ## Models (increeasing by complexity)
 

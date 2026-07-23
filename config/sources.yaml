@@ -1,0 +1,24 @@
+sources:
+  - id: ap-news
+    name: Associated Press
+    domains: 
+      - apnews.com
+    retrieval_method: search
+    enabled: true
+    maximum_articles_per_briefing: 3
+
+  - id: retuers
+    name: Reuters
+    domains: 
+      - reuters.com
+    retrieval_method: search
+    enabled: true
+    maximum_articles_per_briefing: 3
+
+  - id: npr
+    name: NPR
+    domains: 
+      - npr.org
+    retrieval_method: search
+    enabled: true
+    maximum_articles_per_briefing: 3  
